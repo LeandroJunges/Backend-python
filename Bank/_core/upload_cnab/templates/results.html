@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results</title>
+</head>
+<body>
+
+    <div>
+        {% for transation in transations %}
+        <span>Transação:  <p>{{transation.tipo}}</p></span>
+        <span>Data:       <p>{{transation.data}}</p></span>
+        <span>Hora:       <p>{{transation.hora}}</p></span>
+        <span>Loja:       <p>{{transation.loja}}</p></span>
+        <span>Dono:       <p>{{transation.dono}}</p></span>
+        <span>CPF :       <p>{{transation.cpf}}</p></span>
+        <span>Valor:      <p>{{transation.valor}},00</p></span>
+        
+        {% endfor %}
+    </div>
+  
+</body>
+</html>
